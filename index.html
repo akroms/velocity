@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/images/icon/seedling-solid.svg">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Link to style file -->
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="container flex justify-between w-full items-center py-2 md:py-4">
+        <div class="md:inline-flex items-center justify-between w-full">
+            <!-- Navbar logo -->
+            <a class="flex-1 text-blue-400 uppercase text-2xl" href="#">Velocity</a>
+        
+            <!-- Navbar links -->
+            <div class="hidden flex md:flex flex-col md:flex-row justify-evenly flex-1 text-lg" id="nav-list">
+                <a class="hover:text-blue-400 active:text-blue-300 py-2" href="#">Home</a>
+                <a class="hover:text-blue-400 active:text-blue-300 py-2" href="#">Contact</a>
+                <a class="hover:text-blue-400 active:text-blue-300 py-2" href="#">About</a>
+                <a class="hover:text-blue-400 active:text-blue-300 py-2" href="#">Services</a>
+            </div>
+        </div>
+
+        <!-- Nav toggler -->
+        <div class="md:hidden self-start text-2xl" id="toggler">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <div class="h-screen bg-[url('../images/background.png')] bg-no-repeat bg-cover xl:bg-contain">
+        <div class="container flex flex-col items-center justify-center h-full">
+            <h1 class="text-white uppercase text-3xl my-5 md:my-8 md:text-5xl">
+                This is Velocity
+            </h1>
+            <div>
+                <a class="text-white bg-blue-400 hover:bg-blue-500 active:bg-blue-400 px-5 pb-3 pt-2 rounded-md uppercase md:mr-1" href="#">sign up</a>
+                <a class="text-white bg-transparent hover:bg-white hover:text-black active:text-white active:bg-transparent border px-5 pb-3 pt-2 rounded-md uppercase md:ml-1" href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- What we do ? -->
+    <div class="container my-5 md:my-5">
+        <div class="text-center uppercase">
+            <h2 class="text-gray-600 text-3xl md:text-5xl tracking-wide">what we do</h2>
+            <p class="text-gray-400 text-sm my-2 md:my-5 tracking-wide">This is some text inside of a div block.</p>
+        </div>
+        <!-- Cards -->
+        <div class="flex flex-col lg:flex-row justify-center items-center"> 
+            <div class="border py-5 px-4 my-3 mx-2 text-center rounded max-w-sm     ">
+                <img class="mx-auto" src="./public/images/cards/clock.png" alt="card image">
+                <h4 class="text-2xl py-3 tracking-wider uppercase text-gray-800">Graphic Design</h4>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <div class="border py-5 px-4 my-3 mx-2 text-center rounded max-w-sm">
+                <img class="mx-auto" src="./public/images/cards/shrink.png" alt="card image">
+                <h4 class="text-2xl py-3 tracking-wider uppercase text-gray-800">Awesome code</h4>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <div class="border py-5 px-4 my-3 mx-2 text-center rounded max-w-sm">
+                <img class="mx-auto" src="./public/images/cards/template.png" alt="card image">
+                <h4 class="text-2xl py-3 tracking-wider uppercase text-gray-800">free template</h4>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="bg-gray-700">
+        <div class="container">
+            <div class="text-center uppercase py-12">
+                <h2 class="text-white text-3xl md:text-5xl tracking-wide">services</h2>
+                <p class="text-white text-sm my-2 md:my-5 tracking-wide">This is some text inside of a div block.</p>
+            </div>
+             <!-- Cards -->
+            <div class="flex flex-col lg:flex-row justify-center items-center py-3"> 
+                <div class="my-3 mx-2 text-center rounded max-w-md">
+                    <img class="mx-auto" src="./public/images/cards/card-1.png" alt="card image">
+                    <h4 class="text-2xl py-3 tracking-wider uppercase text-white">Graphic Design</h4>
+                    <p class="text-white px-3 py-2 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    <a class="text-white bg-transparent hover:bg-white hover:text-black active:text-white active:bg-transparent border px-5 pb-3 pt-2 rounded-md uppercase md:ml-1" href="#">Learn more</a>
+                </div>
+                <div class="my-3 mx-2 text-center rounded max-w-md">
+                    <img class="mx-auto" src="./public/images/cards/card-2.png" alt="card image">
+                    <h4 class="text-2xl py-3 tracking-wider uppercase text-white">Awesome code</h4>
+                    <p class="text-white px-3 py-2 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    <a class="text-white bg-transparent hover:bg-white hover:text-black active:text-white active:bg-transparent border px-5 pb-3 pt-2 rounded-md uppercase md:ml-1" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB Section -->
+    <div class="container flex flex-col items-center my-10">
+        <div class="text-center uppercase">
+            <h2 class="text-gray-600 text-3xl md:text-5xl tracking-wide">Tab Section</h2>
+            <p class="text-gray-400 text-sm my-2 md:my-5 tracking-wide">This is some text inside of a div block.</p>
+        </div>
+        <!-- Tab BTNs -->
+        <div class="flex flex-col sm:flex-row my-4 md:my-10">
+            <a class="bg-blue-500 text-white mt-2 sm:mt-0 mx-1 px-10 pb-1 rounded uppercase" href="#">Tab Button 1</a>
+            <a class="bg-gray-500 text-white mt-2 sm:mt-0 mx-1 px-10 pb-1 rounded uppercase" href="#">Tab Button 2</a>
+            <a class="bg-gray-500 text-white mt-2 sm:mt-0 mx-1 px-10 pb-1 rounded uppercase" href="#">Tab Button 3</a>
+        </div>
+        <!-- Card -->
+        <div class="my-3 mx-2 text-center rounded max-w-4xl">
+            <img class="mx-auto" src="./public/images/cards/card-3.png" alt="card image">
+            <h4 class="text-2xl py-3 tracking-wider uppercase text-gray-800">Some Title Here</h4>
+            <p class="text-gray-500 px-2 md:px-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container my-8 md:my-14">
+            <!-- Footer Navigation -->
+            <div class="grid grid-cols-3 gap-5">
+                <!-- Footer content & text -->
+                <div class="my-3 sm:my-0 col-span-12 md:col-span-1">
+                    <h5 class="text-gray-800 font-semibold uppercase text-lg tracking-widest my-2 md:my-4">about velocity</h5>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+
+                <!-- Usefull Links -->
+                <div class="col-span-12 md:col-span-1">
+                    <h5 class="text-gray-800 font-semibold uppercase text-lg tracking-widest my-2 md:my-4">useful links</h5>
+                    <div>
+                        <a class="text-gray-500 md:py-1 block hover:text-gray-700" href="#">Phasellus gravida semper nisi</a>
+                        <a class="text-gray-500 md:py-1 block hover:text-gray-700" href="#">Suspendisse nisl elit</a>
+                        <a class="text-gray-500 md:py-1 block hover:text-gray-700" href="#">Dellentesque habitant morbi</a>
+                        <a class="text-gray-500 md:py-1 block hover:text-gray-700" href="#">Etiam sollicitudin ipsum</a>
+                    </div>
+                </div>
+                <!-- Social Media -->
+                <div class="col-span-12 md:col-span-1">     
+                    <h5 class="text-gray-800 font-semibold uppercase text-lg tracking-widest my-2 md:my-4">social</h5>
+                    <div>
+                        <div class="text-gray-500 my-1 hover:text-gray-700">
+                            <img class="inline" src="./public/images/icon/twitter.png" alt="icon">
+                            <a href="#">Twitter</a>
+                        </div>
+                        <div class="text-gray-500 my-1 hover:text-gray-700">
+                            <img class="inline" src="./public/images/icon/facebook.png" alt="icon">
+                            <a href="#">Facebook</a>
+                        </div>
+                        <div class="text-gray-500 my-1 hover:text-gray-700">
+                            <img class="inline" src="./public/images/icon/pinterest.png" alt="icon">
+                            <a href="#">Pinterest</a>
+                        </div>
+                        <div class="text-gray-500 my-1 hover:text-gray-700"> 
+                            <img class="inline" src="./public/images/icon/google.png" alt="icon">
+                            <a href="#">Google</a>
+                        </div>
+                        <div class="text-gray-500 my-1">
+                            <img class="inline" src="./public/images/icon/webflow.png" alt="icon">
+                            <a href="#">Webflow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copyright -->
+        <div class="bg-gray-700 text-center py-4 md:py-8">
+            <p class="text-gray-300">Copyright Velocity Inc. Made in Webflow.</p>
+        </div>
+    </footer>
+
+    <!-- Link to Javascript File -->
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
